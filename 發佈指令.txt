@@ -1,1 +1,0 @@
-su - bwttomcat -c "pkill -9 java && cd /home/bwttomcat/tw_script && ./publish.sh svn_data/lgame-app-`ls /home/java|grep tomcat|cut -d '_' -f 2`.war" && tail -f /home/java/tomcat_`ls /home/java|grep tomcat|cut -d '_' -f 2`/logs/log.`date '+%Y-%m-%d'`.out
